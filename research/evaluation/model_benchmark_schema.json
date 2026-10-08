@@ -1,0 +1,15 @@
+{
+  "model_id": "string",
+  "hardware": {
+    "gpu": "string",
+    "vram_gib": "number",
+    "ram_gib": "number"
+  },
+  "latency_ms": "number",
+  "tokens_per_second": "number",
+  "peak_vram_gib": "number",
+  "answer_correctness": "number_0_to_1",
+  "citation_coverage": "number_0_to_1",
+  "unsupported_claim_rate": "number_0_to_1",
+  "notes": "string"
+}

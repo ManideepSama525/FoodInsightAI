@@ -1,0 +1,70 @@
+[
+  {
+    "id": "food_001",
+    "question": "Which of these foods provide dietary protein: eggs, lentils, and Greek yogurt?",
+    "evidence": [
+      "Eggs provide dietary protein.",
+      "Lentils provide dietary protein.",
+      "Greek yogurt provides dietary protein."
+    ],
+    "expected_terms": [
+      "eggs",
+      "lentils",
+      "greek yogurt",
+      "protein"
+    ]
+  },
+  {
+    "id": "food_002",
+    "question": "Which of these foods provide dietary fiber: oats and lentils?",
+    "evidence": [
+      "Oats provide dietary fiber.",
+      "Lentils provide dietary fiber."
+    ],
+    "expected_terms": [
+      "oats",
+      "lentils",
+      "fiber"
+    ]
+  },
+  {
+    "id": "food_003",
+    "question": "Which of these foods provide calcium: milk and yogurt?",
+    "evidence": [
+      "Milk provides calcium.",
+      "Yogurt provides calcium."
+    ],
+    "expected_terms": [
+      "milk",
+      "yogurt",
+      "calcium"
+    ]
+  },
+  {
+    "id": "food_004",
+    "question": "Which foods are established as legumes: lentils, chickpeas, and eggs?",
+    "evidence": [
+      "Lentils are legumes.",
+      "Chickpeas are legumes.",
+      "The supplied evidence does not establish eggs as legumes."
+    ],
+    "expected_terms": [
+      "lentils",
+      "chickpeas"
+    ]
+  },
+  {
+    "id": "food_005",
+    "question": "Which foods in the evidence provide protein: eggs and tofu?",
+    "evidence": [
+      "Eggs provide dietary protein.",
+      "Tofu provides dietary protein.",
+      "The evidence does not establish spinach as a protein source for this question."
+    ],
+    "expected_terms": [
+      "eggs",
+      "tofu",
+      "protein"
+    ]
+  }
+]

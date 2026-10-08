@@ -1,0 +1,6 @@
+# Optional local model stack. Install only when running a local open-weight model.
+torch
+transformers>=4.45,<6
+accelerate>=0.34,<2
+safetensors>=0.4
+sentencepiece>=0.2

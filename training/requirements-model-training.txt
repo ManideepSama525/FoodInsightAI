@@ -1,0 +1,9 @@
+# FoodInsightAI local training dependencies
+# Python 3.12 recommended on Windows + RTX 4050
+torch
+transformers>=4.45,<6
+accelerate>=0.34,<2
+safetensors>=0.4
+sentencepiece>=0.2
+datasets>=2.20,<5
+peft>=0.13,<1

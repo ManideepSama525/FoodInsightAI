@@ -1,0 +1,28 @@
+{
+  "project": "FoodInsightAI",
+  "phase": 1,
+  "principle": [
+    "understand",
+    "retrieve",
+    "reason",
+    "validate",
+    "respond"
+  ],
+  "services": [
+    "frontend",
+    "backend",
+    "postgres",
+    "qdrant",
+    "neo4j_optional"
+  ],
+  "providers": [
+    "LLMProvider",
+    "VisionProvider",
+    "EmbeddingProvider"
+  ],
+  "core_routes": [
+    "/api/v1/health",
+    "/api/v1/chat",
+    "/api/v1/upload"
+  ]
+}

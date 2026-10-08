@@ -1,0 +1,121 @@
+﻿# ==============================
+# FoodInsightAI Git Ignore
+# ==============================
+
+# Secrets / local environment
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Python
+# ==============================
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# ==============================
+# Node / Next.js
+# ==============================
+node_modules/
+.next/
+out/
+.turbo/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ==============================
+# AI model weights / checkpoints
+# ==============================
+artifacts/
+FoodInsightAI_FoodInsightLM_V0_2/artifacts/
+FoodInsightAI_FoodInsightLM_V0_2/models/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+
+# ==============================
+# Training datasets / generated datasets
+# ==============================
+FoodInsightAI_FoodInsightLM_V0_2/research/dataset/
+FoodInsightAI_FoodInsightLM_V0_2/research/datasets/
+
+# ==============================
+# Runtime / uploaded data
+# ==============================
+data/uploads/
+data/processed/
+data/jobs/
+data/cache/
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+*.sqlite
+*.sqlite3
+
+# Keep the USDA evidence file used by the application
+!data/usda/
+!data/usda/usda_evidence_v03.jsonl
+
+# ==============================
+# Local databases / vector stores
+# ==============================
+qdrant_storage/
+neo4j_data/
+postgres_data/
+
+# ==============================
+# Logs
+# ==============================
+*.log
+logs/
+
+# ==============================
+# Backup / temporary files
+# ==============================
+*.bak
+*.backup
+*.old
+*.orig
+*.precomparison.bak
+*.tmp
+*.temp
+*.swp
+*~
+
+# ==============================
+# OS
+# ==============================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==============================
+# IDE
+# ==============================
+.vscode/
+.idea/
+
+# ==============================
+# Generated evaluation output
+# ==============================
+evaluation/results/
+eval/results/
+reports/generated/
+
+backend/data/usda/
+data/usda/
+foodinsight_test.txt

@@ -1,0 +1,33 @@
+{
+  "bundle": "FoodInsightAI model training bundle",
+  "purpose": "local model training, evaluation, dependency setup, optional Docker reproducibility",
+  "base_model": "HuggingFaceTB/SmolLM2-360M-Instruct",
+  "default_training": "LoRA",
+  "target_hardware": "NVIDIA RTX 4050 Laptop GPU ~6 GiB VRAM",
+  "python": "3.12",
+  "seed": 20261001,
+  "credential_policy": "no secrets in Dockerfiles; HF_TOKEN optional via environment",
+  "limitation": "This archive cannot include the user's private Windows project tree because the chat runtime cannot read C:\\Users\\manid\\fi34.",
+  "files": [
+    ".env.example",
+    ".gitignore.training",
+    "README_MODEL_TRAINING.md",
+    "config/training_defaults.json",
+    "docker/Dockerfile.model-training",
+    "docker/docker-compose.training.yml",
+    "docs/DOCKER_CREDENTIAL_POLICY.md",
+    "docs/TRAINING_RUNBOOK.md",
+    "requirements-model-training.txt",
+    "research/evaluation/benchmark_questions.json",
+    "scripts/download_baseline.cmd",
+    "scripts/download_baseline.py",
+    "scripts/evaluate.cmd",
+    "scripts/evaluate_foodinsight_model.py",
+    "scripts/prepare_dataset.cmd",
+    "scripts/prepare_training_dataset.py",
+    "scripts/setup_model_training.cmd",
+    "scripts/train.cmd",
+    "scripts/train_foodinsight_lora.py",
+    "scripts/verify_training_environment.py"
+  ]
+}

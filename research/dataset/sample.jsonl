@@ -1,0 +1,1 @@
+{"id":"demo-001","source":"demo","question":"What is evidence-grounded retrieval?","context":"FoodInsightAI retrieves supporting evidence before generation.","answer":"It is retrieval followed by evidence-grounded generation.","claims":["FoodInsightAI retrieves supporting evidence before generation."],"evidence_ids":["demo-e1"],"split":"train"}

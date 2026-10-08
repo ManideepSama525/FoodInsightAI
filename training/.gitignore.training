@@ -1,0 +1,18 @@
+# Training secrets
+.env
+
+# Model/data artifacts
+models/
+artifacts/
+*.safetensors
+*.bin
+*.pt
+*.pth
+
+# Python
+__pycache__/
+*.pyc
+
+# Training caches
+.cache/
+.huggingface/

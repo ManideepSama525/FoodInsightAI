@@ -1,0 +1,25 @@
+services:
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis_data:/data
+
+  worker:
+    build:
+      context: ..
+      dockerfile: infra/Dockerfile.worker
+    restart: unless-stopped
+    environment:
+      FOODINSIGHT_REDIS_URL: redis://redis:6379/0
+      FOODINSIGHT_WORKER_CONCURRENCY: 4
+      FOODINSIGHT_JOB_QUEUE: foodinsight.jobs
+      FOODINSIGHT_DLQ: foodinsight.jobs.dlq
+    depends_on:
+      - redis
+    deploy:
+      replicas: 2
+
+volumes:
+  redis_data:

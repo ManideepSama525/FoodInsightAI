@@ -1,0 +1,15 @@
+services:
+  foodinsight-model-training:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.model-training
+    environment:
+      HF_TOKEN: ${HF_TOKEN:-}
+      MODEL_ID: ${MODEL_ID:-HuggingFaceTB/SmolLM2-360M-Instruct}
+      MODEL_DIR: ${MODEL_DIR:-models/SmolLM2-360M-Instruct}
+      TRAIN_MODE: ${TRAIN_MODE:-lora}
+    volumes:
+      - ../models:/workspace/models
+      - ../research:/workspace/research
+      - ../artifacts:/workspace/artifacts
+    gpus: all
