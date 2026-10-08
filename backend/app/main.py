@@ -38,6 +38,11 @@ app.include_router(api_router, prefix="/api/v1")
 async def health() -> dict[str, str]:
     return {"status": "ok", "service": "foodinsightai-backend"}
 
+@app.on_event("startup")
+async def startup_event():
+    # Initialize Neo4j, Qdrant, and other services here
+    pass
+
 @app.exception_handler(Exception)
 async def unhandled_exception(request: Request, exc: Exception):
     import structlog
